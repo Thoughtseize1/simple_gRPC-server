@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+service FileExchanger {
+  rpc ListFiles (Request) returns (Response) {}
+}
+
+message Request {
+  string path = 1;
+  bool show_hidden_files = 2;
+}
+
+message Response {
+  message File {
+    string name = 1;
+    string size = 2;
+    string path = 3;
+  }
+  string path = 1;
+  repeated File files = 2;
+}
+
