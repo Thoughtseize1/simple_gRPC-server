@@ -46,6 +46,5 @@ Usage: Use this parameter to specify the directory path on the server where file
 `show_hidden_files`: Boolean flag to determine whether to include hidden files in the listing (True) or not (False).
 Usage: Toggle this parameter to control whether hidden files (files whose names start with '.') are included in the list of files retrieved from the server.
 
-*`run_task` Function
-The `run_task` function in client.py is a utility function used to execute tasks with a gRPC stub, such as `download_file` or `list_of_files`.
-Usage: Pass either `download_file` or `list_of_files` as the first argument to run_task, followed by the appropriate parameters (stub, file_path, is_absolute for download_file; stub, path, show_hidden_files for list_of_files).
+* The `run_task` function in client.py is a utility function used to execute tasks with a gRPC stub, such as `download_file` or `list_of_files`.
+Usage: Pass either `download_file` or `list_of_files` as the first argument to run_task, followed by the appropriate parameters (stub, file_path, is_absolute for `download_file`; stub, path, show_hidden_files for `list_of_files`).
